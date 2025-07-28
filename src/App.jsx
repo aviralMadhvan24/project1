@@ -453,44 +453,41 @@ export default function App() {
                     </div>
                   </>
                 ) : (
-                  <div className="text-center">
-                    <h3 className="text-3xl font-bold mb-6 text-purple-800">
-                      Happy 3rd Anniversary, My Love
-                    </h3>
-                    
-                    <motion.div 
-                      className="text-5xl mb-6 text-pink-500"
-                      animate={{ rotate: [0, 15, -15, 0], scale: [1, 1.2, 1] }}
-                      transition={{ duration: 1.5 }}
-                    >
-                      💖
-                    </motion.div>
-                    
-                    <p className="text-lg text-purple-700 mb-6 leading-relaxed italic">
-                      "Every moment with you feels like a beautiful dream I never want to wake up from. 
-                      Three years have flown by, yet my love for you grows stronger with each passing day. 
-                      You are my everything - my joy, my comfort, my home. Here's to forever with you."
-                    </p>
-                    
-                    <div className="bg-gradient-to-r from-pink-200 to-purple-200 h-48 rounded-xl flex items-center justify-center mb-6 overflow-hidden">
-                      <div className="text-center">
-                        <div className="text-4xl mb-3">🎥</div>
-                        <p className="text-purple-700 font-medium">Personal Video Message</p>
-                        <p className="text-sm text-purple-600">(Would be a real video of you here)</p>
-                      </div>
-                    </div>
-                    
-                    <button
-                      onClick={() => {
-                        setShowSurprise(false);
-                        setIsPasswordCorrect(false);
-                        triggerConfetti();
-                      }}
-                      className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-xl font-medium shadow-md w-full"
-                    >
-                      Close & Keep Loving You
-                    </button>
-                  </div>
+                <div className="text-center">
+  <h3 className="text-3xl font-bold mb-6 text-purple-800">
+    Happy 3rd Anniversary, My Love
+  </h3>
+
+  <motion.div 
+    className="text-5xl mb-6 text-pink-500"
+    animate={{ rotate: [0, 15, -15, 0], scale: [1, 1.2, 1] }}
+    transition={{ duration: 1.5 }}
+  >
+    💖
+  </motion.div>
+
+  <p className="text-lg text-purple-700 mb-6 leading-relaxed italic">
+    "Every moment with you feels like a beautiful dream I never want to wake up from. 
+    Three years have flown by, yet my love for you grows stronger with each passing day. 
+    You are my everything - my joy, my comfort, my home. Here's to forever with you."
+  </p>
+
+  <div className="bg-gradient-to-r from-pink-200 to-purple-200 rounded-xl flex items-center justify-center mb-6 overflow-hidden h-64">
+    <img src="/098.jpg" alt="" className="h-full w-auto object-cover" />
+  </div>
+
+  <button
+    onClick={() => {
+      setShowSurprise(false);
+      setIsPasswordCorrect(false);
+      triggerConfetti();
+    }}
+    className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-xl font-medium shadow-md w-full"
+  >
+    Close & Keep Loving You
+  </button>
+</div>
+
                 )}
               </motion.div>
             </motion.div>
@@ -567,6 +564,7 @@ export default function App() {
       <footer className="py-10 text-center text-purple-700 bg-gradient-to-r from-pink-50 to-purple-50 border-t border-pink-200">
         <p className="mb-2">Created with ❤️ for the love of my life</p>
         <p>Our journey continues forever...</p>
+        <p>From your buddhu 😁</p>
       </footer>
     </div>
   );
